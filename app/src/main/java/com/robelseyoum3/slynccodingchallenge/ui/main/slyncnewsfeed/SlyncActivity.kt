@@ -21,6 +21,7 @@ class SlyncActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_slync)
+
         viewModel = ViewModelProvider(this, providerFactory).get(SlyncViewModel::class.java)
         Log.d(TAG, "SlyncActivity: ${viewModel.hashCode()} ")
 

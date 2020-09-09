@@ -36,6 +36,7 @@ MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/robelseyoum/.gradl
 MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/de113aac13463d4d2f87fde1b992725e/jetified-glide-4.9.0/AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/097b18dc38f1aaf228b8e67a92c4d403/jetified-play-services-location-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/124ab061f8fc9da0c824aefcb1211c7b/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/070ee7803115899c911097ed562b60a3/jetified-rxandroid-2.1.1/AndroidManifest.xml:15:1-20:12
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/c19148f5dcd5ba1f37de58193dcb89f6/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/cf35e3dd86d094b45118e128efa5e78f/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/f6024b19fef489510a4fa0a7f1ec453e/jetified-play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
@@ -229,6 +230,8 @@ MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/robels
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/097b18dc38f1aaf228b8e67a92c4d403/jetified-play-services-location-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/124ab061f8fc9da0c824aefcb1211c7b/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/124ab061f8fc9da0c824aefcb1211c7b/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/070ee7803115899c911097ed562b60a3/jetified-rxandroid-2.1.1/AndroidManifest.xml:18:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/070ee7803115899c911097ed562b60a3/jetified-rxandroid-2.1.1/AndroidManifest.xml:18:5-43
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/c19148f5dcd5ba1f37de58193dcb89f6/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/c19148f5dcd5ba1f37de58193dcb89f6/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/cf35e3dd86d094b45118e128efa5e78f/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44

@@ -6,8 +6,13 @@ import com.bumptech.glide.RequestManager
 import com.bumptech.glide.request.RequestOptions
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import com.robelseyoum3.slynccodingchallenge.concurrency.AppDispatchers
+import com.robelseyoum3.slynccodingchallenge.concurrency.AppDispatchersImpl
 import com.robelseyoum3.slynccodingchallenge.data.api.WebServices
-import com.robelseyoum3.slynccodingchallenge.data.repository.SlyncRepository
+import com.robelseyoum3.slynccodingchallenge.data.repository.ISlynLogin
+import com.robelseyoum3.slynccodingchallenge.data.repository.ISlyncPost
+import com.robelseyoum3.slynccodingchallenge.data.repository.SlynLoginRepo
+import com.robelseyoum3.slynccodingchallenge.data.repository.SlyncPostRepo
 import com.robelseyoum3.slynccodingchallenge.utils.Constants.Companion.BASE_URL_SLYNC
 import dagger.Module
 import dagger.Provides
@@ -37,15 +42,15 @@ class AppModule {
             .client(httpClient)
     }
 
-    @Provides
     @Singleton
+    @Provides
     fun provideLoggingInterceptor(): HttpLoggingInterceptor {
         return HttpLoggingInterceptor()
     }
 
 
-    @Provides
     @Singleton
+    @Provides
     fun provideOkHttpClient(loggingInterceptor: HttpLoggingInterceptor): OkHttpClient {
         loggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
         return OkHttpClient.Builder()
@@ -55,7 +60,7 @@ class AppModule {
 
     @Singleton
     @Provides
-    fun provideOpenApiAuthService(retrofitBuilder: Retrofit.Builder): WebServices {
+    fun provideSlyncService(retrofitBuilder: Retrofit.Builder): WebServices {
         return retrofitBuilder
             .build()
             .create(WebServices::class.java)
@@ -63,10 +68,21 @@ class AppModule {
 
     @Singleton
     @Provides
-    fun provideSpaceRepository(webServices: WebServices) : SlyncRepository {
-        return SlyncRepository(webServices)
+    fun provideAppDispatchers(): AppDispatchers {
+        return AppDispatchersImpl()
     }
 
+    @Singleton
+    @Provides
+    fun provideSlyncPostRepository(webServices: WebServices, appDispatchers: AppDispatchers) : ISlyncPost {
+        return SlyncPostRepo(webServices, appDispatchers)
+    }
+
+    @Singleton
+    @Provides
+    fun provideSlyncLoginRepository(webServices: WebServices, appDispatchers: AppDispatchers) : ISlynLogin {
+        return SlynLoginRepo(webServices, appDispatchers)
+    }
 
     @Singleton
     @Provides

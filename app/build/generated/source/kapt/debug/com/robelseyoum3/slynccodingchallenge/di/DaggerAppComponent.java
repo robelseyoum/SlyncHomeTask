@@ -4,17 +4,18 @@ package com.robelseyoum3.slynccodingchallenge.di;
 import android.app.Application;
 import androidx.lifecycle.ViewModel;
 import com.robelseyoum3.slynccodingchallenge.BaseApplication;
+import com.robelseyoum3.slynccodingchallenge.concurrency.AppDispatchers;
 import com.robelseyoum3.slynccodingchallenge.data.api.WebServices;
-import com.robelseyoum3.slynccodingchallenge.data.repository.SlyncRepository;
+import com.robelseyoum3.slynccodingchallenge.data.repository.ISlyncPost;
 import com.robelseyoum3.slynccodingchallenge.di.slyncmain.SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment;
 import com.robelseyoum3.slynccodingchallenge.session.SessionManager;
 import com.robelseyoum3.slynccodingchallenge.session.SessionManager_Factory;
 import com.robelseyoum3.slynccodingchallenge.ui.main.slyncnews.BaseSlyncFeedFragment_MembersInjector;
-import com.robelseyoum3.slynccodingchallenge.ui.main.slyncnewsfeed.SlyncViewModel;
-import com.robelseyoum3.slynccodingchallenge.ui.main.slyncnews.SlyncViewModel_Factory;
 import com.robelseyoum3.slynccodingchallenge.ui.main.slyncnewsfeed.SlyncActivity;
 import com.robelseyoum3.slynccodingchallenge.ui.main.slyncnewsfeed.SlyncActivity_MembersInjector;
 import com.robelseyoum3.slynccodingchallenge.ui.main.slyncnewsfeed.SlyncFragment;
+import com.robelseyoum3.slynccodingchallenge.ui.main.slyncnewsfeed.SlyncViewModel;
+import com.robelseyoum3.slynccodingchallenge.ui.main.slyncnewsfeed.SlyncViewModel_Factory;
 import com.robelseyoum3.slynccodingchallenge.viewmodel.ViewModelProviderFactory;
 import dagger.android.AndroidInjector;
 import dagger.android.DaggerApplication_MembersInjector;
@@ -47,9 +48,11 @@ public final class DaggerAppComponent implements AppComponent {
 
   private Provider<Retrofit.Builder> provideRetrofitBuilderProvider;
 
-  private Provider<WebServices> provideOpenApiAuthServiceProvider;
+  private Provider<WebServices> provideSlyncServiceProvider;
 
-  private Provider<SlyncRepository> provideSpaceRepositoryProvider;
+  private Provider<AppDispatchers> provideAppDispatchersProvider;
+
+  private Provider<ISlyncPost> provideSlyncPostRepositoryProvider;
 
   private DaggerAppComponent(AppModule appModuleParam, Application application) {
 
@@ -78,8 +81,9 @@ public final class DaggerAppComponent implements AppComponent {
     this.provideLoggingInterceptorProvider = DoubleCheck.provider(AppModule_ProvideLoggingInterceptorFactory.create(appModuleParam));
     this.provideOkHttpClientProvider = DoubleCheck.provider(AppModule_ProvideOkHttpClientFactory.create(appModuleParam, provideLoggingInterceptorProvider));
     this.provideRetrofitBuilderProvider = DoubleCheck.provider(AppModule_ProvideRetrofitBuilderFactory.create(appModuleParam, provideOkHttpClientProvider));
-    this.provideOpenApiAuthServiceProvider = DoubleCheck.provider(AppModule_ProvideOpenApiAuthServiceFactory.create(appModuleParam, provideRetrofitBuilderProvider));
-    this.provideSpaceRepositoryProvider = DoubleCheck.provider(AppModule_ProvideSpaceRepositoryFactory.create(appModuleParam, provideOpenApiAuthServiceProvider));
+    this.provideSlyncServiceProvider = DoubleCheck.provider(AppModule_ProvideSlyncServiceFactory.create(appModuleParam, provideRetrofitBuilderProvider));
+    this.provideAppDispatchersProvider = DoubleCheck.provider(AppModule_ProvideAppDispatchersFactory.create(appModuleParam));
+    this.provideSlyncPostRepositoryProvider = DoubleCheck.provider(AppModule_ProvideSlyncPostRepositoryFactory.create(appModuleParam, provideSlyncServiceProvider, provideAppDispatchersProvider));
   }
 
   @Override
@@ -152,7 +156,7 @@ public final class DaggerAppComponent implements AppComponent {
             ) {
           return new SlyncFragmentSubcomponentFactory();}
       };
-      this.slyncViewModelProvider = SlyncViewModel_Factory.create(DaggerAppComponent.this.provideSpaceRepositoryProvider);
+      this.slyncViewModelProvider = SlyncViewModel_Factory.create(DaggerAppComponent.this.provideSlyncPostRepositoryProvider);
     }
 
     @Override
