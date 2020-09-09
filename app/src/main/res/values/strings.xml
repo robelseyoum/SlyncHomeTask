@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Slync Coding Challenge</string>
+
+    <string name="retry">Retry</string>
+    <string name="image">Image</string>
+    <string name="dummy_message">Dummy Message</string>
+
+    <!--  Button navigator menu names  -->
+    <string name="work">Work</string>
+    <string name="home">Home</string>
+    <string name="notification">Notification</string>
+
+</resources>
