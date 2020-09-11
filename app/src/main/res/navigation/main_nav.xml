@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/slyncFragment"
-        android:name="com.robelseyoum3.slynccodingchallenge.ui.main.slyncnewsfeed.SlyncFragment"
+        android:name="com.robelseyoum3.slynccodingchallenge.ui.feed.FeedFragment"
         android:label="SlyncFragment" />
 
 </navigation>

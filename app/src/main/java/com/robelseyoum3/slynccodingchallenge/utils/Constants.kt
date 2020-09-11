@@ -6,6 +6,8 @@ class Constants {
 
         const val BASE_URL_SLYNC = "https://api.slync.com/candidate/v1/"
 
+        const val BEARER = "Bearer "
+
         const val ERROR_UNKNOWN = "Unknown error"
         const val INVALID_STATE_EVENT = "Invalid state event"
 

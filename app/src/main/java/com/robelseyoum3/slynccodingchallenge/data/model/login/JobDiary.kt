@@ -1,13 +1,8 @@
 package com.robelseyoum3.slynccodingchallenge.data.model.login
 
+data class JobDiary (
 
-import com.google.gson.annotations.SerializedName
-
-data class JobDiary(
-    @SerializedName("applied")
-    val applied: List<Any>,
-    @SerializedName("requests")
-    val requests: List<Any>,
-    @SerializedName("saved")
-    val saved: List<Any>
+	val saved : List<String>,
+	val applied : List<String>,
+	val requests : List<String>
 )

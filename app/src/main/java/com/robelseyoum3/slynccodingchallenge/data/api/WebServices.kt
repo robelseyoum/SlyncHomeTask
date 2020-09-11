@@ -1,7 +1,7 @@
 package com.robelseyoum3.slynccodingchallenge.data.api
 
-import androidx.lifecycle.LiveData
-import com.robelseyoum3.slynccodingchallenge.data.model.login.Candidate
+import com.robelseyoum3.slynccodingchallenge.data.model.login.LoginCandidateBase
+import com.robelseyoum3.slynccodingchallenge.data.model.login.LoginRequest
 import com.robelseyoum3.slynccodingchallenge.data.model.posts.Posts
 import retrofit2.http.*
 
@@ -9,12 +9,11 @@ interface WebServices {
 
     //const val BASE_URL_SLYNC = "https://api.slync.com/candidate/v1"
 
+    @Headers("Accept: application/json")
     @POST("login")
-    @FormUrlEncoded
     suspend fun login(
-        @Field("email") email: String,
-        @Field("password") password: String
-    ) : Candidate
+        @Body body: LoginRequest
+    ) : LoginCandidateBase
 
 
     @GET("posts")

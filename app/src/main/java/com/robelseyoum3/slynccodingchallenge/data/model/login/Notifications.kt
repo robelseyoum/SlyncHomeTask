@@ -1,13 +1,10 @@
 package com.robelseyoum3.slynccodingchallenge.data.model.login
 
 
-import com.google.gson.annotations.SerializedName
 
-data class Notifications(
-    @SerializedName("notificationFirst")
-    val notificationFirst: Any,
-    @SerializedName("notificationLast")
-    val notificationLast: Any,
-    @SerializedName("notifications")
-    val notifications: List<Any>
+data class Notifications (
+
+	val notifications : List<String>,
+	val notificationFirst : String,
+	val notificationLast : String
 )

@@ -221,6 +221,10 @@ attr chipStyle
 attr chipSurfaceColor
 attr circleCrop
 attr circleRadius
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr clickAction
 attr closeIcon
 attr closeIconEnabled
@@ -1651,6 +1655,8 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable custom_search_view
+drawable default_image
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1660,6 +1666,7 @@ drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_baseline_home_24
+drawable ic_baseline_menu_book_24
 drawable ic_baseline_notifications_24
 drawable ic_baseline_work_24
 drawable ic_calendar_black_24dp
@@ -1669,6 +1676,7 @@ drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_like_filled
 drawable ic_menu_arrow_down_black_24dp
 drawable ic_menu_arrow_up_black_24dp
 drawable ic_mtrl_checked_circle
@@ -1716,6 +1724,11 @@ drawable notify_panel_notification_icon_bg
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font open_sans_bold
+font open_sans_extra_bold
+font open_sans_light
+font open_sans_regular
+font open_sans_semi_bold
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1804,6 +1817,7 @@ id baseline
 id beginOnFirstDraw
 id beginning
 id blocking
+id boosted
 id bottom
 id bottom_navigation_view
 id bounce
@@ -1825,7 +1839,6 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id confirm_button
-id constraintLayout
 id container
 id content
 id contentPanel
@@ -1866,10 +1879,12 @@ id edit_query
 id end
 id enterAlways
 id enterAlwaysCollapsed
+id errorMessageContainer
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id feedList
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1892,12 +1907,14 @@ id home
 id homeAsUp
 id honorRequest
 id icon
+id icon_contact
 id icon_group
 id icon_only
 id ifRoom
 id ignore
 id ignoreRequest
 id image
+id image_logo
 id info
 id invisible
 id italic
@@ -1926,13 +1943,13 @@ id leak_canary_row_title
 id leak_canary_toast_icon
 id left
 id light
+id likeButton
 id line1
 id line3
 id linear
 id listMode
 id list_item
 id literal
-id llMessageContainer
 id main_container
 id main_nav_xml
 id main_nav_host_fragment
@@ -1983,6 +2000,7 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
+id name
 id nav_controller_view_tag
 id navigation_header_container
 id never
@@ -2009,8 +2027,11 @@ id peekHeight
 id percent
 id pin
 id position
+id postImage
 id postLayout
-id progress_bar_frg
+id profileImage
+id profileViewContainer
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
@@ -2021,7 +2042,6 @@ id right
 id right_icon
 id right_side
 id rounded
-id rvList
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -2089,6 +2109,7 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id text
 id text2
+id textContent
 id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
@@ -2192,9 +2213,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_slync
+layout activity_main
 layout custom_dialog
-layout data_raws
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -2210,7 +2230,9 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout fragment_slync
+layout feed_text_image_item
+layout feed_text_item
+layout fragment_feed
 layout leak_canary_heap_analysis_failure_screen
 layout leak_canary_heap_dump_toast
 layout leak_canary_heap_render
@@ -2338,8 +2360,8 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
-string dummy_message
 string error_icon_content_description
+string error_message
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
@@ -3155,6 +3177,7 @@ styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha

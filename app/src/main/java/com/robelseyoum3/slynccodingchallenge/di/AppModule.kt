@@ -9,10 +9,10 @@ import com.google.gson.GsonBuilder
 import com.robelseyoum3.slynccodingchallenge.concurrency.AppDispatchers
 import com.robelseyoum3.slynccodingchallenge.concurrency.AppDispatchersImpl
 import com.robelseyoum3.slynccodingchallenge.data.api.WebServices
-import com.robelseyoum3.slynccodingchallenge.data.repository.ISlynLogin
-import com.robelseyoum3.slynccodingchallenge.data.repository.ISlyncPost
-import com.robelseyoum3.slynccodingchallenge.data.repository.SlynLoginRepo
-import com.robelseyoum3.slynccodingchallenge.data.repository.SlyncPostRepo
+import com.robelseyoum3.slynccodingchallenge.data.repository.ILogin
+import com.robelseyoum3.slynccodingchallenge.data.repository.IPost
+import com.robelseyoum3.slynccodingchallenge.data.repository.LoginRepo
+import com.robelseyoum3.slynccodingchallenge.data.repository.PostRepo
 import com.robelseyoum3.slynccodingchallenge.utils.Constants.Companion.BASE_URL_SLYNC
 import dagger.Module
 import dagger.Provides
@@ -74,14 +74,14 @@ class AppModule {
 
     @Singleton
     @Provides
-    fun provideSlyncPostRepository(webServices: WebServices, appDispatchers: AppDispatchers) : ISlyncPost {
-        return SlyncPostRepo(webServices, appDispatchers)
+    fun provideSlyncPostRepository(webServices: WebServices, appDispatchers: AppDispatchers) : IPost {
+        return PostRepo(webServices, appDispatchers)
     }
 
     @Singleton
     @Provides
-    fun provideSlyncLoginRepository(webServices: WebServices, appDispatchers: AppDispatchers) : ISlynLogin {
-        return SlynLoginRepo(webServices, appDispatchers)
+    fun provideSlyncLoginRepository(webServices: WebServices, appDispatchers: AppDispatchers) : ILogin {
+        return LoginRepo(webServices, appDispatchers)
     }
 
     @Singleton

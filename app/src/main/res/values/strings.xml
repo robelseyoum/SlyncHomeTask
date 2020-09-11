@@ -3,7 +3,7 @@
 
     <string name="retry">Retry</string>
     <string name="image">Image</string>
-    <string name="dummy_message">Dummy Message</string>
+    <string name="error_message">Oh dear we are unable to fetch new feed posts for you. Maybe your not connected with internet!</string>
 
     <!--  Button navigator menu names  -->
     <string name="work">Work</string>

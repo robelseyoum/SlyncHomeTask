@@ -2,7 +2,7 @@ package com.robelseyoum3.slynccodingchallenge.di;
 
 import com.robelseyoum3.slynccodingchallenge.di.slyncmain.SlyncFragmentBuildersModule;
 import com.robelseyoum3.slynccodingchallenge.di.slyncmain.SlyncViewModelModule;
-import com.robelseyoum3.slynccodingchallenge.ui.main.slyncnewsfeed.SlyncActivity;
+import com.robelseyoum3.slynccodingchallenge.ui.activity.MainActivity;
 import dagger.Binds;
 import dagger.Module;
 import dagger.Subcomponent;
@@ -11,20 +11,20 @@ import dagger.multibindings.ClassKey;
 import dagger.multibindings.IntoMap;
 
 @Module(
-  subcomponents = ActivityBuildersModule_ContributeMainActivity.SlyncActivitySubcomponent.class
+  subcomponents = ActivityBuildersModule_ContributeMainActivity.MainActivitySubcomponent.class
 )
 public abstract class ActivityBuildersModule_ContributeMainActivity {
   private ActivityBuildersModule_ContributeMainActivity() {}
 
   @Binds
   @IntoMap
-  @ClassKey(SlyncActivity.class)
+  @ClassKey(MainActivity.class)
   abstract AndroidInjector.Factory<?> bindAndroidInjectorFactory(
-      SlyncActivitySubcomponent.Factory builder);
+      MainActivitySubcomponent.Factory builder);
 
   @Subcomponent(modules = {SlyncFragmentBuildersModule.class, SlyncViewModelModule.class})
-  public interface SlyncActivitySubcomponent extends AndroidInjector<SlyncActivity> {
+  public interface MainActivitySubcomponent extends AndroidInjector<MainActivity> {
     @Subcomponent.Factory
-    interface Factory extends AndroidInjector.Factory<SlyncActivity> {}
+    interface Factory extends AndroidInjector.Factory<MainActivity> {}
   }
 }

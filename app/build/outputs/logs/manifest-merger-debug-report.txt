@@ -25,6 +25,7 @@ MERGED from [com.google.dagger:dagger-android-support:2.28] /Users/robelseyoum/.
 MERGED from [androidx.navigation:navigation-ui:2.1.0-alpha05] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/eb6099536b29cbda211eb8229471e813/navigation-ui-2.1.0-alpha05/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.1.0-alpha09] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/c259aadb6aa78543c9b6ec7b60934159/material-1.1.0-alpha09/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/6bdba072347416a6f63b294482245291/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/9f3999f59d6e36514f04ec94bbd374d3/jetified-circleimageview-3.1.0/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0-alpha03] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/9fa04de704392d3820337079645ad203/lifecycle-extensions-2.2.0-alpha03/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.room:room-runtime:2.2.5] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/0304559648b206559d556e512813e0d7/room-runtime-2.2.5/AndroidManifest.xml:17:1-31:12
 MERGED from [com.google.dagger:dagger-android:2.28] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/8128e51031e3e86cf5ac5416386204af/jetified-dagger-android-2.28/AndroidManifest.xml:17:1-22:12
@@ -108,6 +109,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/robelseyou
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/9deb8272113e49affeb231aa515cc588/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.1.0-alpha09] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/c259aadb6aa78543c9b6ec7b60934159/material-1.1.0-alpha09/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0-alpha09] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/c259aadb6aa78543c9b6ec7b60934159/material-1.1.0-alpha09/AndroidManifest.xml:22:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/9f3999f59d6e36514f04ec94bbd374d3/jetified-circleimageview-3.1.0/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/9f3999f59d6e36514f04ec94bbd374d3/jetified-circleimageview-3.1.0/AndroidManifest.xml:9:5-20
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0-alpha03] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/9fa04de704392d3820337079645ad203/lifecycle-extensions-2.2.0-alpha03/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0-alpha03] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/9fa04de704392d3820337079645ad203/lifecycle-extensions-2.2.0-alpha03/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.room:room-runtime:2.2.5] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/0304559648b206559d556e512813e0d7/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
@@ -148,10 +151,10 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.2.0-alpha03] /Users/robelsey
 		ADDED from /Users/robelseyoum/Documents/Upwork/slync/slyncCodingChallenge/app/src/main/AndroidManifest.xml:14:9-40
 	android:name
 		ADDED from /Users/robelseyoum/Documents/Upwork/slync/slyncCodingChallenge/app/src/main/AndroidManifest.xml:8:9-40
-activity#com.robelseyoum3.slynccodingchallenge.ui.main.slyncnewsfeed.SlyncActivity
+activity#com.robelseyoum3.slynccodingchallenge.ui.activity.MainActivity
 ADDED from /Users/robelseyoum/Documents/Upwork/slync/slyncCodingChallenge/app/src/main/AndroidManifest.xml:16:9-22:20
 	android:name
-		ADDED from /Users/robelseyoum/Documents/Upwork/slync/slyncCodingChallenge/app/src/main/AndroidManifest.xml:16:19-70
+		ADDED from /Users/robelseyoum/Documents/Upwork/slync/slyncCodingChallenge/app/src/main/AndroidManifest.xml:16:19-59
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/robelseyoum/Documents/Upwork/slync/slyncCodingChallenge/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
@@ -208,6 +211,8 @@ MERGED from [com.google.android.material:material:1.1.0-alpha09] /Users/robelsey
 MERGED from [com.google.android.material:material:1.1.0-alpha09] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/c259aadb6aa78543c9b6ec7b60934159/material-1.1.0-alpha09/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/6bdba072347416a6f63b294482245291/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/6bdba072347416a6f63b294482245291/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/9f3999f59d6e36514f04ec94bbd374d3/jetified-circleimageview-3.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/9f3999f59d6e36514f04ec94bbd374d3/jetified-circleimageview-3.1.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0-alpha03] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/9fa04de704392d3820337079645ad203/lifecycle-extensions-2.2.0-alpha03/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0-alpha03] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/9fa04de704392d3820337079645ad203/lifecycle-extensions-2.2.0-alpha03/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.room:room-runtime:2.2.5] /Users/robelseyoum/.gradle/caches/transforms-2/files-2.1/0304559648b206559d556e512813e0d7/room-runtime-2.2.5/AndroidManifest.xml:20:5-22:41

@@ -1,17 +1,36 @@
 package com.robelseyoum3.slynccodingchallenge.data.model.login
 
+data class Candidate (
 
-import com.google.gson.annotations.SerializedName
-
-data class Candidate(
-    @SerializedName("candidate")
-    val candidate: CandidateX,
-    @SerializedName("jobDiary")
-    val jobDiary: JobDiary,
-    @SerializedName("notifications")
-    val notifications: Notifications,
-    @SerializedName("ping")
-    val ping: Ping,
-    @SerializedName("token")
-    val token: Token
+	val guid : String,
+	val forename : String,
+	val surname : String,
+	val email : String,
+	val phone : Int,
+	val birthDate : Any,
+	val country : Country,
+	val city : City,
+	val registered : Any,
+	val status : Status,
+	val institution : Institution,
+	val ethnicity : Ethnicity,
+	val sex : Sex,
+	val recentJob : String,
+	val employer : String,
+	val jobTitle : String,
+	val promo : String,
+	val graduationDate : Any,
+	val industries : List<Industries>,
+	val skills : List<Skills>,
+	val subjects : List<Subjects>,
+	val tagline : String,
+	val deactivated : Boolean,
+	val pushNotifications : Boolean,
+	val savedProfile : Any,
+	val rsm : String,
+	val photoUrl : String,
+	val photo150Url : String,
+	val photo60Url : String,
+	val videoUrl : String,
+	val videoStillUrl : String
 )

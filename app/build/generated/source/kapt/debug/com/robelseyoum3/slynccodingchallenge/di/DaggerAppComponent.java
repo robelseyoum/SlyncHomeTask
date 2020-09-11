@@ -6,16 +6,15 @@ import androidx.lifecycle.ViewModel;
 import com.robelseyoum3.slynccodingchallenge.BaseApplication;
 import com.robelseyoum3.slynccodingchallenge.concurrency.AppDispatchers;
 import com.robelseyoum3.slynccodingchallenge.data.api.WebServices;
-import com.robelseyoum3.slynccodingchallenge.data.repository.ISlyncPost;
+import com.robelseyoum3.slynccodingchallenge.data.repository.ILogin;
+import com.robelseyoum3.slynccodingchallenge.data.repository.IPost;
 import com.robelseyoum3.slynccodingchallenge.di.slyncmain.SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment;
-import com.robelseyoum3.slynccodingchallenge.session.SessionManager;
-import com.robelseyoum3.slynccodingchallenge.session.SessionManager_Factory;
-import com.robelseyoum3.slynccodingchallenge.ui.main.slyncnews.BaseSlyncFeedFragment_MembersInjector;
-import com.robelseyoum3.slynccodingchallenge.ui.main.slyncnewsfeed.SlyncActivity;
-import com.robelseyoum3.slynccodingchallenge.ui.main.slyncnewsfeed.SlyncActivity_MembersInjector;
-import com.robelseyoum3.slynccodingchallenge.ui.main.slyncnewsfeed.SlyncFragment;
-import com.robelseyoum3.slynccodingchallenge.ui.main.slyncnewsfeed.SlyncViewModel;
-import com.robelseyoum3.slynccodingchallenge.ui.main.slyncnewsfeed.SlyncViewModel_Factory;
+import com.robelseyoum3.slynccodingchallenge.ui.activity.MainActivity;
+import com.robelseyoum3.slynccodingchallenge.ui.activity.MainActivity_MembersInjector;
+import com.robelseyoum3.slynccodingchallenge.ui.feed.FeedFragment;
+import com.robelseyoum3.slynccodingchallenge.ui.feed.FeedViewModel;
+import com.robelseyoum3.slynccodingchallenge.ui.feed.FeedViewModel_Factory;
+import com.robelseyoum3.slynccodingchallenge.ui.feed.slyncnews.BaseFragment_MembersInjector;
 import com.robelseyoum3.slynccodingchallenge.viewmodel.ViewModelProviderFactory;
 import dagger.android.AndroidInjector;
 import dagger.android.DaggerApplication_MembersInjector;
@@ -38,9 +37,7 @@ import retrofit2.Retrofit;
     "rawtypes"
 })
 public final class DaggerAppComponent implements AppComponent {
-  private Provider<ActivityBuildersModule_ContributeMainActivity.SlyncActivitySubcomponent.Factory> slyncActivitySubcomponentFactoryProvider;
-
-  private Provider<SessionManager> sessionManagerProvider;
+  private Provider<ActivityBuildersModule_ContributeMainActivity.MainActivitySubcomponent.Factory> mainActivitySubcomponentFactoryProvider;
 
   private Provider<HttpLoggingInterceptor> provideLoggingInterceptorProvider;
 
@@ -52,7 +49,9 @@ public final class DaggerAppComponent implements AppComponent {
 
   private Provider<AppDispatchers> provideAppDispatchersProvider;
 
-  private Provider<ISlyncPost> provideSlyncPostRepositoryProvider;
+  private Provider<IPost> provideSlyncPostRepositoryProvider;
+
+  private Provider<ILogin> provideSlyncLoginRepositoryProvider;
 
   private DaggerAppComponent(AppModule appModuleParam, Application application) {
 
@@ -65,34 +64,30 @@ public final class DaggerAppComponent implements AppComponent {
 
   private Map<Class<?>, Provider<AndroidInjector.Factory<?>>> getMapOfClassOfAndProviderOfAndroidInjectorFactoryOf(
       ) {
-    return Collections.<Class<?>, Provider<AndroidInjector.Factory<?>>>singletonMap(SlyncActivity.class, (Provider) slyncActivitySubcomponentFactoryProvider);}
+    return Collections.<Class<?>, Provider<AndroidInjector.Factory<?>>>singletonMap(MainActivity.class, (Provider) mainActivitySubcomponentFactoryProvider);}
 
   private DispatchingAndroidInjector<Object> getDispatchingAndroidInjectorOfObject() {
     return DispatchingAndroidInjector_Factory.newInstance(getMapOfClassOfAndProviderOfAndroidInjectorFactoryOf(), Collections.<String, Provider<AndroidInjector.Factory<?>>>emptyMap());}
 
   @SuppressWarnings("unchecked")
   private void initialize(final AppModule appModuleParam, final Application application) {
-    this.slyncActivitySubcomponentFactoryProvider = new Provider<ActivityBuildersModule_ContributeMainActivity.SlyncActivitySubcomponent.Factory>() {
+    this.mainActivitySubcomponentFactoryProvider = new Provider<ActivityBuildersModule_ContributeMainActivity.MainActivitySubcomponent.Factory>() {
       @Override
-      public ActivityBuildersModule_ContributeMainActivity.SlyncActivitySubcomponent.Factory get() {
-        return new SlyncActivitySubcomponentFactory();}
+      public ActivityBuildersModule_ContributeMainActivity.MainActivitySubcomponent.Factory get() {
+        return new MainActivitySubcomponentFactory();}
     };
-    this.sessionManagerProvider = DoubleCheck.provider(SessionManager_Factory.create());
     this.provideLoggingInterceptorProvider = DoubleCheck.provider(AppModule_ProvideLoggingInterceptorFactory.create(appModuleParam));
     this.provideOkHttpClientProvider = DoubleCheck.provider(AppModule_ProvideOkHttpClientFactory.create(appModuleParam, provideLoggingInterceptorProvider));
     this.provideRetrofitBuilderProvider = DoubleCheck.provider(AppModule_ProvideRetrofitBuilderFactory.create(appModuleParam, provideOkHttpClientProvider));
     this.provideSlyncServiceProvider = DoubleCheck.provider(AppModule_ProvideSlyncServiceFactory.create(appModuleParam, provideRetrofitBuilderProvider));
     this.provideAppDispatchersProvider = DoubleCheck.provider(AppModule_ProvideAppDispatchersFactory.create(appModuleParam));
     this.provideSlyncPostRepositoryProvider = DoubleCheck.provider(AppModule_ProvideSlyncPostRepositoryFactory.create(appModuleParam, provideSlyncServiceProvider, provideAppDispatchersProvider));
+    this.provideSlyncLoginRepositoryProvider = DoubleCheck.provider(AppModule_ProvideSlyncLoginRepositoryFactory.create(appModuleParam, provideSlyncServiceProvider, provideAppDispatchersProvider));
   }
 
   @Override
   public void inject(BaseApplication arg0) {
     injectBaseApplication(arg0);}
-
-  @Override
-  public SessionManager getSessionManager() {
-    return sessionManagerProvider.get();}
 
   private BaseApplication injectBaseApplication(BaseApplication instance) {
     DaggerApplication_MembersInjector.injectAndroidInjector(instance, getDispatchingAndroidInjectorOfObject());
@@ -115,81 +110,81 @@ public final class DaggerAppComponent implements AppComponent {
     }
   }
 
-  private final class SlyncActivitySubcomponentFactory implements ActivityBuildersModule_ContributeMainActivity.SlyncActivitySubcomponent.Factory {
+  private final class MainActivitySubcomponentFactory implements ActivityBuildersModule_ContributeMainActivity.MainActivitySubcomponent.Factory {
     @Override
-    public ActivityBuildersModule_ContributeMainActivity.SlyncActivitySubcomponent create(
-        SlyncActivity arg0) {
+    public ActivityBuildersModule_ContributeMainActivity.MainActivitySubcomponent create(
+        MainActivity arg0) {
       Preconditions.checkNotNull(arg0);
-      return new SlyncActivitySubcomponentImpl(arg0);
+      return new MainActivitySubcomponentImpl(arg0);
     }
   }
 
-  private final class SlyncActivitySubcomponentImpl implements ActivityBuildersModule_ContributeMainActivity.SlyncActivitySubcomponent {
-    private Provider<SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.SlyncFragmentSubcomponent.Factory> slyncFragmentSubcomponentFactoryProvider;
+  private final class MainActivitySubcomponentImpl implements ActivityBuildersModule_ContributeMainActivity.MainActivitySubcomponent {
+    private Provider<SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.FeedFragmentSubcomponent.Factory> feedFragmentSubcomponentFactoryProvider;
 
-    private Provider<SlyncViewModel> slyncViewModelProvider;
+    private Provider<FeedViewModel> feedViewModelProvider;
 
-    private SlyncActivitySubcomponentImpl(SlyncActivity arg0) {
+    private MainActivitySubcomponentImpl(MainActivity arg0) {
 
       initialize(arg0);
     }
 
     private Map<Class<?>, Provider<AndroidInjector.Factory<?>>> getMapOfClassOfAndProviderOfAndroidInjectorFactoryOf(
         ) {
-      return MapBuilder.<Class<?>, Provider<AndroidInjector.Factory<?>>>newMapBuilder(2).put(SlyncActivity.class, (Provider) DaggerAppComponent.this.slyncActivitySubcomponentFactoryProvider).put(SlyncFragment.class, (Provider) slyncFragmentSubcomponentFactoryProvider).build();}
+      return MapBuilder.<Class<?>, Provider<AndroidInjector.Factory<?>>>newMapBuilder(2).put(MainActivity.class, (Provider) DaggerAppComponent.this.mainActivitySubcomponentFactoryProvider).put(FeedFragment.class, (Provider) feedFragmentSubcomponentFactoryProvider).build();}
 
     private DispatchingAndroidInjector<Object> getDispatchingAndroidInjectorOfObject() {
       return DispatchingAndroidInjector_Factory.newInstance(getMapOfClassOfAndProviderOfAndroidInjectorFactoryOf(), Collections.<String, Provider<AndroidInjector.Factory<?>>>emptyMap());}
 
     private Map<Class<? extends ViewModel>, Provider<ViewModel>> getMapOfClassOfAndProviderOfViewModel(
         ) {
-      return Collections.<Class<? extends ViewModel>, Provider<ViewModel>>singletonMap(SlyncViewModel.class, (Provider) slyncViewModelProvider);}
+      return Collections.<Class<? extends ViewModel>, Provider<ViewModel>>singletonMap(FeedViewModel.class, (Provider) feedViewModelProvider);}
 
     private ViewModelProviderFactory getViewModelProviderFactory() {
       return new ViewModelProviderFactory(getMapOfClassOfAndProviderOfViewModel());}
 
     @SuppressWarnings("unchecked")
-    private void initialize(final SlyncActivity arg0) {
-      this.slyncFragmentSubcomponentFactoryProvider = new Provider<SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.SlyncFragmentSubcomponent.Factory>() {
+    private void initialize(final MainActivity arg0) {
+      this.feedFragmentSubcomponentFactoryProvider = new Provider<SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.FeedFragmentSubcomponent.Factory>() {
         @Override
-        public SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.SlyncFragmentSubcomponent.Factory get(
+        public SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.FeedFragmentSubcomponent.Factory get(
             ) {
-          return new SlyncFragmentSubcomponentFactory();}
+          return new FeedFragmentSubcomponentFactory();}
       };
-      this.slyncViewModelProvider = SlyncViewModel_Factory.create(DaggerAppComponent.this.provideSlyncPostRepositoryProvider);
+      this.feedViewModelProvider = FeedViewModel_Factory.create(DaggerAppComponent.this.provideSlyncPostRepositoryProvider, DaggerAppComponent.this.provideSlyncLoginRepositoryProvider, DaggerAppComponent.this.provideAppDispatchersProvider);
     }
 
     @Override
-    public void inject(SlyncActivity arg0) {
-      injectSlyncActivity(arg0);}
+    public void inject(MainActivity arg0) {
+      injectMainActivity(arg0);}
 
-    private SlyncActivity injectSlyncActivity(SlyncActivity instance) {
+    private MainActivity injectMainActivity(MainActivity instance) {
       DaggerAppCompatActivity_MembersInjector.injectAndroidInjector(instance, getDispatchingAndroidInjectorOfObject());
-      SlyncActivity_MembersInjector.injectProviderFactory(instance, getViewModelProviderFactory());
+      MainActivity_MembersInjector.injectProviderFactory(instance, getViewModelProviderFactory());
       return instance;
     }
 
-    private final class SlyncFragmentSubcomponentFactory implements SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.SlyncFragmentSubcomponent.Factory {
+    private final class FeedFragmentSubcomponentFactory implements SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.FeedFragmentSubcomponent.Factory {
       @Override
-      public SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.SlyncFragmentSubcomponent create(
-          SlyncFragment arg0) {
+      public SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.FeedFragmentSubcomponent create(
+          FeedFragment arg0) {
         Preconditions.checkNotNull(arg0);
-        return new SlyncFragmentSubcomponentImpl(arg0);
+        return new FeedFragmentSubcomponentImpl(arg0);
       }
     }
 
-    private final class SlyncFragmentSubcomponentImpl implements SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.SlyncFragmentSubcomponent {
-      private SlyncFragmentSubcomponentImpl(SlyncFragment arg0) {
+    private final class FeedFragmentSubcomponentImpl implements SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.FeedFragmentSubcomponent {
+      private FeedFragmentSubcomponentImpl(FeedFragment arg0) {
 
       }
 
       @Override
-      public void inject(SlyncFragment arg0) {
-        injectSlyncFragment(arg0);}
+      public void inject(FeedFragment arg0) {
+        injectFeedFragment(arg0);}
 
-      private SlyncFragment injectSlyncFragment(SlyncFragment instance) {
-        DaggerFragment_MembersInjector.injectAndroidInjector(instance, SlyncActivitySubcomponentImpl.this.getDispatchingAndroidInjectorOfObject());
-        BaseSlyncFeedFragment_MembersInjector.injectProviderFactory(instance, SlyncActivitySubcomponentImpl.this.getViewModelProviderFactory());
+      private FeedFragment injectFeedFragment(FeedFragment instance) {
+        DaggerFragment_MembersInjector.injectAndroidInjector(instance, MainActivitySubcomponentImpl.this.getDispatchingAndroidInjectorOfObject());
+        BaseFragment_MembersInjector.injectProviderFactory(instance, MainActivitySubcomponentImpl.this.getViewModelProviderFactory());
         return instance;
       }
     }

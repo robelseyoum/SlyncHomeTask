@@ -6,18 +6,34 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="AppDebug" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="fetchPost" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d18d78f-c4ba-4a61-9b2a-1aae38e73dc4" name="Default Changelist" comment="fix merge conflict">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/api/ApiResult.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/repository/ISlynLogin.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/repository/ISlyncPost.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/repository/SlynLoginRepo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/repository/SlyncPostRepo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/utils/RepositoryExtensions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Industries.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/LoginCandidateBase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/LoginRequest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Skills.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Subjects.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/base/BaseViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/feed/FeedAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/feed/FeedFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/feed/FeedViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/custom_search_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/default_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_like_filled.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_menu_book_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/open_sans_bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/open_sans_extra_bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/open_sans_light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/open_sans_regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/open_sans_semi_bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/feed_text_image_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/feed_text_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_feed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -29,22 +45,21 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/robelseyoum3/slynccodingchallenge/data/repository/SlyncRepository_Factory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/robelseyoum3/slynccodingchallenge/di/AppModule_ProvideOpenApiAuthServiceFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/robelseyoum3/slynccodingchallenge/di/AppModule_ProvideSpaceRepositoryFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule_ContributeMainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule_ContributeMainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/SlyncViewModel_Factory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/robelseyoum3/slynccodingchallenge/session/SessionManager_Factory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/BaseSlyncFeedFragment_MembersInjector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity_MembersInjector.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/bundle-manifest/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex" afterDir="false" />
@@ -54,47 +69,87 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/data/repository/SlyncRepository_Factory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/AppModule_ProvideOpenApiAuthServiceFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/AppModule_ProvideSpaceRepositoryFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule_ContributeMainActivity$SlyncActivitySubcomponent$Factory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule_ContributeMainActivity$SlyncActivitySubcomponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule_ContributeMainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule_ContributeMainActivity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl$SlyncFragmentSubcomponentFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl$SlyncFragmentSubcomponentFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl$SlyncFragmentSubcomponentImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl$SlyncFragmentSubcomponentImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl$SlyncFragmentSubcomponentFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl$SlyncFragmentSubcomponentImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/SlyncViewModel_Factory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment$SlyncFragmentSubcomponent$Factory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment$SlyncFragmentSubcomponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/session/SessionManager_Factory$InstanceHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/session/SessionManager_Factory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/BaseSlyncFeedFragment_MembersInjector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity_MembersInjector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_java_res/debug/out.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_java_res/debug/out.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/4914d13011ee2ca4a6e7beb5ba721c65f2d4940ee4ea9c21fbb180e31d70618b_0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/4914d13011ee2ca4a6e7beb5ba721c65f2d4940ee4ea9c21fbb180e31d70618b_1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/4914d13011ee2ca4a6e7beb5ba721c65f2d4940ee4ea9c21fbb180e31d70618b_2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/4914d13011ee2ca4a6e7beb5ba721c65f2d4940ee4ea9c21fbb180e31d70618b_3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/api/WebServices.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/api/WebServices.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/repository/SlyncRepository.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/repository/SlyncRepository_Factory.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Candidate.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Candidate.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/CandidateX.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/City.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/City.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Country.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Country.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/CountryX.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Ethnicity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Ethnicity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Industry.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Institution.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Institution.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/InstitutionType.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/InstitutionType.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/InstitutionTypeX.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/JobDiary.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/JobDiary.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Notifications.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Notifications.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Ping.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Ping.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Sex.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Sex.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Skill.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Status.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Status.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Subject.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Token.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/data/model/login/Token.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule_ContributeMainActivity$SlyncActivitySubcomponent$Factory.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule_ContributeMainActivity$SlyncActivitySubcomponent.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule_ContributeMainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule_ContributeMainActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/AppComponent.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/AppComponent.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/AppModule.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/AppModule.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/AppModule_ProvideOpenApiAuthServiceFactory.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/AppModule_ProvideSpaceRepositoryFactory.dex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$Builder.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$Builder.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentFactory.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentFactory.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl$SlyncFragmentSubcomponentFactory.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl$SlyncFragmentSubcomponentFactory.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl$SlyncFragmentSubcomponentImpl.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl$SlyncFragmentSubcomponentImpl.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentFactory.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl$SlyncFragmentSubcomponentFactory.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl$SlyncFragmentSubcomponentImpl.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent$SlyncActivitySubcomponentImpl.dex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/DaggerAppComponent.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment$SlyncFragmentSubcomponent$Factory.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment$SlyncFragmentSubcomponent.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncViewModelModule.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncViewModelModule.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/BaseSlyncFeedFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/BaseSlyncFeedFragment.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/SlyncViewModel.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/SlyncViewModel_Factory.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncFragment.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/session/SessionManager.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/session/SessionManager_Factory$InstanceHolder.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/session/SessionManager_Factory.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/ui/BaseActivity.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/BaseSlyncFeedFragment.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/BaseSlyncFeedFragment_MembersInjector.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity_MembersInjector.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncFragment.dex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/utils/Constants$Companion.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/utils/Constants$Companion.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/utils/Constants.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/robelseyoum3/slynccodingchallenge/utils/Constants.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_slync.xml.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_data_raws.xml.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_fragment_slync.xml.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/navigation_main_nav.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/navigation_main_nav.xml.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/build-history.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.keystream" afterDir="false" />
@@ -109,7 +164,11 @@
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/constants.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/constants.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/constants.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/constants.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/constants.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/constants.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/constants.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/constants.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/constants.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/constants.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/constants.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/constants.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" afterDir="false" />
@@ -152,7 +211,6 @@
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
@@ -182,7 +240,11 @@
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/constants.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/constants.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/constants.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/constants.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/constants.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/constants.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/constants.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/constants.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/constants.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/constants.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/constants.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/constants.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" afterDir="false" />
@@ -219,7 +281,6 @@
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/lookups/file-to-id.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/lookups/file-to-id.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/lookups/file-to-id.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
@@ -239,51 +300,172 @@
       <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incApCache/debug/classpath-entries.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incApCache/debug/classpath-entries.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incApCache/debug/classpath-structure.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incApCache/debug/classpath-structure.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incApCache/debug/java-cache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incApCache/debug/java-cache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/META-INF/app_debug.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/META-INF/app_debug.kotlin_module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/api/WebServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/api/WebServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/repository/SlyncRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Candidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Candidate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/CandidateX.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/City.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/CountryX.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Ethnicity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Ethnicity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Industry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Institution.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Institution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/InstitutionType.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/InstitutionType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/InstitutionTypeX.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/JobDiary.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/JobDiary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Notifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Notifications.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Ping.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Ping.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Sex.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Sex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Skill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Subject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Token.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/di/AppComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/di/AppComponent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/di/AppModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/di/AppModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncViewModelModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncViewModelModule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/BaseSlyncFeedFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/BaseSlyncFeedFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/SlyncViewModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/session/SessionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/ui/BaseActivity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/BaseSlyncFeedFragment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncFragment.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/utils/Constants$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/utils/Constants$Companion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/utils/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/robelseyoum3/slynccodingchallenge/utils/Constants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/api/WebServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/api/WebServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/api/WebServices.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/api/WebServices.kapt_metadata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/repository/SlyncRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/repository/SlyncRepository.kapt_metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Candidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Candidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Candidate.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Candidate.kapt_metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/CandidateX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/CandidateX.kapt_metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/City.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/City.kapt_metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Country.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Country.kapt_metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/CountryX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/CountryX.kapt_metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Ethnicity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Ethnicity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Ethnicity.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Ethnicity.kapt_metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Industry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Industry.kapt_metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Institution.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Institution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Institution.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Institution.kapt_metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/InstitutionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/InstitutionType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/InstitutionType.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/InstitutionType.kapt_metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/InstitutionTypeX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/InstitutionTypeX.kapt_metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/JobDiary.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/JobDiary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/JobDiary.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/JobDiary.kapt_metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Notifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Notifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Notifications.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Notifications.kapt_metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Ping.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Ping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Ping.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Ping.kapt_metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Sex.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Sex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Sex.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Sex.kapt_metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Skill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Skill.kapt_metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Status.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Status.kapt_metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Subject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Subject.kapt_metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Token.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Token.kapt_metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule.kapt_metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/AppComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/AppComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/AppComponent.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/AppComponent.kapt_metadata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/AppModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/AppModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/AppModule.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/AppModule.kapt_metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule.kapt_metadata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncViewModelModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncViewModelModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncViewModelModule.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncViewModelModule.kapt_metadata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/BaseSlyncFeedFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/BaseSlyncFeedFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/BaseSlyncFeedFragment.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/BaseSlyncFeedFragment.kapt_metadata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/SlyncViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/SlyncViewModel.kapt_metadata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity.kapt_metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/session/SessionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/session/SessionManager.kapt_metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/ui/BaseActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/ui/BaseActivity.kapt_metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/BaseSlyncFeedFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/BaseSlyncFeedFragment.kapt_metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity.kapt_metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncFragment.kapt_metadata" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/utils/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/utils/Constants.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/robelseyoum3/slynccodingchallenge/utils/Constants.kapt_metadata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/api/WebServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/api/WebServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/repository/SlyncRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Candidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Candidate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/CandidateX.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/City.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/CountryX.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Ethnicity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Ethnicity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Industry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Institution.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Institution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/InstitutionType.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/InstitutionType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/InstitutionTypeX.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/JobDiary.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/JobDiary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Notifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Notifications.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Ping.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Ping.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Sex.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Sex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Skill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Subject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/data/model/login/Token.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/di/AppComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/di/AppComponent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/di/AppModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/di/AppModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncViewModelModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncViewModelModule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/BaseSlyncFeedFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/BaseSlyncFeedFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/SlyncViewModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncFragment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/session/SessionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/ui/BaseActivity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnews/BaseSlyncFeedFragment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncFragment.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/utils/Constants$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/utils/Constants$Companion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/utils/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/robelseyoum3/slynccodingchallenge/utils/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/BaseApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/BaseApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/api/ApiResult.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/api/ApiResult.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/api/WebServices.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/api/WebServices.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/repository/SlyncRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Candidate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Candidate.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/CandidateX.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/City.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/City.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Country.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Country.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/CountryX.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Ethnicity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Ethnicity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Industry.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Institution.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Institution.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/InstitutionType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/InstitutionType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/InstitutionTypeX.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/JobDiary.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/JobDiary.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Notifications.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Notifications.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Ping.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Ping.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Sex.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Sex.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Skill.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Status.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Status.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Subject.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Token.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login/Token.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/repository/ISlynLogin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/repository/ILogin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/repository/ISlyncPost.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/repository/IPost.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/repository/SlynLoginRepo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/repository/LoginRepo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/repository/SlyncPostRepo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/repository/PostRepo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/di/ActivityBuildersModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/di/AppComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/di/AppComponent.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/di/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/di/AppModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncFragmentBuildersModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncViewModelModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/di/slyncmain/SlyncViewModelModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/session/SessionManager.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/BaseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/base/BaseActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/main/placeholder.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/BaseSlyncFeedFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/base/BaseFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/activity/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/main/slyncnewsfeed/SlyncViewModel.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/utils/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/utils/Constants.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/utils/RepositoryExtensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/utils/RepositoryExtensions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_slync.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/data_raws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_slync.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/main_nav.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/main_nav.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,8 +495,8 @@
       <list>
         <option value="layoutResourceFile" />
         <option value="navigationResourceFile" />
-        <option value="Kotlin File" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin File" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -328,7 +510,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -339,7 +520,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -348,9 +529,13 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/domain/auth" />
       <recent name="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/utils" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.robelseyoum3.slynccodingchallenge.ui.feed" />
+      <recent name="com.robelseyoum3.slynccodingchallenge.ui.base" />
+      <recent name="com.robelseyoum3.slynccodingchallenge.ui.activity" />
       <recent name="com.robelseyoum3.slynccodingchallenge.ui.main.slyncnews" />
       <recent name="com.robelseyoum3.slynccodingchallenge.data.model.login" />
     </key>
@@ -358,8 +543,11 @@
       <recent name="com.robelseyoum3.slynccodingchallenge" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/data/model/login" />
       <recent name="$PROJECT_DIR$/app/src/main/res" />
-      <recent name="$PROJECT_DIR$/app/src/main/res/values" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge" />
     </key>
   </component>
   <component name="RunManager">
@@ -436,10 +624,11 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="628" y="-833" key="#com.intellij.ide.util.MemberChooser" timestamp="1599665553408">
+    <state x="628" y="-833" key="#com.intellij.ide.util.MemberChooser" timestamp="1599762789015">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="628" y="-833" key="#com.intellij.ide.util.MemberChooser/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599665553408" />
+    <state x="628" y="-833" key="#com.intellij.ide.util.MemberChooser/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599762789015" />
+    <state x="597" y="209" key="#com.intellij.ide.util.MemberChooser/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@0.23.1413.877" timestamp="1599687329280" />
     <state x="345" y="-622" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1599597781318">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
@@ -449,98 +638,107 @@
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
     <state x="539" y="-645" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599585723845" />
-    <state x="241" y="-995" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599663381700">
+    <state x="241" y="-995" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599838082916">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="241" y="-995" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599663381700" />
-    <state x="475" y="-780" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599580280805">
+    <state x="241" y="-995" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599838082916" />
+    <state x="312" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@0.23.1413.877" timestamp="1599687082632" />
+    <state x="475" y="-780" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599837887619">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="475" y="-780" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599580280805" />
-    <state x="399" y="-945" width="525" height="677" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1599579081490">
+    <state x="475" y="-780" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599837887619" />
+    <state x="399" y="-945" width="525" height="677" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1599837765558">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="399" y="-945" width="525" height="677" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599579081490" />
+    <state x="399" y="-945" width="525" height="677" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599837765558" />
+    <state x="200" y="-881" key="#xdebugger.evaluate" timestamp="1599765721793">
+      <screen x="-183" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="200" y="-881" key="#xdebugger.evaluate/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599765721793" />
     <state x="334" y="-768" key="AndroidCreateResourceFileDialog" timestamp="1599604807376">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
     <state x="334" y="-768" key="AndroidCreateResourceFileDialog/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599604807376" />
-    <state x="664" y="-763" key="AndroidProcessChooserDialog" timestamp="1599604353536">
+    <state x="664" y="-763" key="AndroidProcessChooserDialog" timestamp="1599736344541">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="664" y="-763" key="AndroidProcessChooserDialog/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599604353536" />
-    <state x="351" y="-958" key="CommitChangelistDialog2" timestamp="1599648257726">
+    <state x="664" y="-763" key="AndroidProcessChooserDialog/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599736344541" />
+    <state x="351" y="-958" key="CommitChangelistDialog2" timestamp="1599838936857">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="351" y="-958" key="CommitChangelistDialog2/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599648257726" />
+    <state x="351" y="-958" key="CommitChangelistDialog2/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599838936857" />
     <state x="-35" y="-957" width="1637" height="842" key="DiffContextDialog" timestamp="1599648236177">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
     <state x="-35" y="-957" width="1637" height="842" key="DiffContextDialog/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599648236177" />
-    <state width="1722" height="368" key="GridCell.Tab.0.bottom" timestamp="1599667887768">
+    <state width="1730" height="155" key="GridCell.Tab.0.bottom" timestamp="1599776220707">
+      <screen x="-2103" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1730" height="695" key="GridCell.Tab.0.bottom/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599770384214" />
+    <state width="1730" height="155" key="GridCell.Tab.0.bottom/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-2103.-1057.1920.1057" timestamp="1599776220707" />
+    <state width="1730" height="155" key="GridCell.Tab.0.center" timestamp="1599776220706">
+      <screen x="-2103" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1730" height="695" key="GridCell.Tab.0.center/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599770384213" />
+    <state width="1730" height="155" key="GridCell.Tab.0.center/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-2103.-1057.1920.1057" timestamp="1599776220706" />
+    <state width="1730" height="155" key="GridCell.Tab.0.left" timestamp="1599776220706">
+      <screen x="-2103" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1730" height="695" key="GridCell.Tab.0.left/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599770384213" />
+    <state width="1730" height="155" key="GridCell.Tab.0.left/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-2103.-1057.1920.1057" timestamp="1599776220706" />
+    <state width="1730" height="155" key="GridCell.Tab.0.right" timestamp="1599776220707">
+      <screen x="-2103" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1730" height="695" key="GridCell.Tab.0.right/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599770384214" />
+    <state width="1730" height="155" key="GridCell.Tab.0.right/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-2103.-1057.1920.1057" timestamp="1599776220707" />
+    <state width="1730" height="66" key="GridCell.Tab.1.bottom" timestamp="1599769114232">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1722" height="368" key="GridCell.Tab.0.bottom/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599667887768" />
-    <state width="1722" height="368" key="GridCell.Tab.0.center" timestamp="1599667887767">
+    <state width="1730" height="66" key="GridCell.Tab.1.bottom/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599769114232" />
+    <state width="1730" height="66" key="GridCell.Tab.1.center" timestamp="1599769114231">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1722" height="368" key="GridCell.Tab.0.center/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599667887767" />
-    <state width="1722" height="368" key="GridCell.Tab.0.left" timestamp="1599667887767">
+    <state width="1730" height="66" key="GridCell.Tab.1.center/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599769114231" />
+    <state width="1730" height="66" key="GridCell.Tab.1.left" timestamp="1599769114231">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1722" height="368" key="GridCell.Tab.0.left/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599667887767" />
-    <state width="1722" height="368" key="GridCell.Tab.0.right" timestamp="1599667887768">
+    <state width="1730" height="66" key="GridCell.Tab.1.left/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599769114231" />
+    <state width="1730" height="66" key="GridCell.Tab.1.right" timestamp="1599769114232">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1722" height="368" key="GridCell.Tab.0.right/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599667887768" />
-    <state width="1795" height="227" key="GridCell.Tab.1.bottom" timestamp="1599608686210">
+    <state width="1730" height="66" key="GridCell.Tab.1.right/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599769114232" />
+    <state width="1706" height="223" key="GridCell.Tab.2.bottom" timestamp="1599736543303">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1795" height="227" key="GridCell.Tab.1.bottom/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599608686210" />
-    <state width="1795" height="227" key="GridCell.Tab.1.center" timestamp="1599608686209">
+    <state width="1706" height="223" key="GridCell.Tab.2.bottom/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599736543303" />
+    <state width="1706" height="223" key="GridCell.Tab.2.center" timestamp="1599736543303">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1795" height="227" key="GridCell.Tab.1.center/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599608686209" />
-    <state width="1795" height="227" key="GridCell.Tab.1.left" timestamp="1599608686209">
+    <state width="1706" height="223" key="GridCell.Tab.2.center/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599736543303" />
+    <state width="1706" height="223" key="GridCell.Tab.2.left" timestamp="1599736543302">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1795" height="227" key="GridCell.Tab.1.left/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599608686209" />
-    <state width="1795" height="227" key="GridCell.Tab.1.right" timestamp="1599608686210">
+    <state width="1706" height="223" key="GridCell.Tab.2.left/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599736543302" />
+    <state width="1706" height="223" key="GridCell.Tab.2.right" timestamp="1599736543303">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1795" height="227" key="GridCell.Tab.1.right/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599608686210" />
-    <state width="1795" height="227" key="GridCell.Tab.2.bottom" timestamp="1599608686211">
+    <state width="1706" height="223" key="GridCell.Tab.2.right/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599736543303" />
+    <state width="1706" height="223" key="GridCell.Tab.3.bottom" timestamp="1599736543305">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1795" height="227" key="GridCell.Tab.2.bottom/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599608686211" />
-    <state width="1795" height="227" key="GridCell.Tab.2.center" timestamp="1599608686210">
+    <state width="1706" height="223" key="GridCell.Tab.3.bottom/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599736543305" />
+    <state width="1706" height="223" key="GridCell.Tab.3.center" timestamp="1599736543304">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1795" height="227" key="GridCell.Tab.2.center/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599608686210" />
-    <state width="1795" height="227" key="GridCell.Tab.2.left" timestamp="1599608686210">
+    <state width="1706" height="223" key="GridCell.Tab.3.center/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599736543304" />
+    <state width="1706" height="223" key="GridCell.Tab.3.left" timestamp="1599736543304">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1795" height="227" key="GridCell.Tab.2.left/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599608686210" />
-    <state width="1795" height="227" key="GridCell.Tab.2.right" timestamp="1599608686210">
+    <state width="1706" height="223" key="GridCell.Tab.3.left/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599736543304" />
+    <state width="1706" height="223" key="GridCell.Tab.3.right" timestamp="1599736543305">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1795" height="227" key="GridCell.Tab.2.right/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599608686210" />
-    <state width="1795" height="227" key="GridCell.Tab.3.bottom" timestamp="1599608686211">
-      <screen x="-183" y="-1057" width="1920" height="1057" />
-    </state>
-    <state width="1795" height="227" key="GridCell.Tab.3.bottom/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599608686211" />
-    <state width="1795" height="227" key="GridCell.Tab.3.center" timestamp="1599608686211">
-      <screen x="-183" y="-1057" width="1920" height="1057" />
-    </state>
-    <state width="1795" height="227" key="GridCell.Tab.3.center/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599608686211" />
-    <state width="1795" height="227" key="GridCell.Tab.3.left" timestamp="1599608686211">
-      <screen x="-183" y="-1057" width="1920" height="1057" />
-    </state>
-    <state width="1795" height="227" key="GridCell.Tab.3.left/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599608686211" />
-    <state width="1795" height="227" key="GridCell.Tab.3.right" timestamp="1599608686211">
-      <screen x="-183" y="-1057" width="1920" height="1057" />
-    </state>
-    <state width="1795" height="227" key="GridCell.Tab.3.right/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599608686211" />
+    <state width="1706" height="223" key="GridCell.Tab.3.right/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599736543305" />
     <state x="218" y="-897" key="MergeDialog" timestamp="1599648206740">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
@@ -553,25 +751,68 @@
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
     <state x="328" y="-909" key="SettingsEditor/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599666581595" />
-    <state width="500" height="496" key="SwitcherDM" timestamp="1599664438724">
+    <state width="500" height="496" key="SwitcherDM" timestamp="1599767279209">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="500" height="496" key="SwitcherDM/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599664438724" />
-    <state x="383" y="-796" key="Vcs.Push.Dialog.v2" timestamp="1599645236311">
+    <state width="500" height="496" key="SwitcherDM/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599767279209" />
+    <state width="500" height="496" key="SwitcherDM/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-2103.-1057.1920.1057" timestamp="1599685293022" />
+    <state width="500" height="496" key="SwitcherDM/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@0.23.1413.877" timestamp="1599688083988" />
+    <state x="383" y="-796" key="Vcs.Push.Dialog.v2" timestamp="1599838906408">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="383" y="-796" key="Vcs.Push.Dialog.v2/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599645236311" />
+    <state x="383" y="-796" key="Vcs.Push.Dialog.v2/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599838906408" />
     <state x="354" y="-793" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1599605606434">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
     <state x="354" y="-793" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599605606434" />
-    <state x="447" y="-766" width="714" height="472" key="find.popup" timestamp="1599667695695">
+    <state x="447" y="-766" width="714" height="472" key="find.popup" timestamp="1599767435469">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="447" y="-766" width="714" height="472" key="find.popup/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599667695695" />
+    <state x="447" y="-766" width="714" height="472" key="find.popup/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599767435469" />
     <state x="607" y="-903" key="refactoring.ChangeSignatureDialog" timestamp="1599661887230">
       <screen x="-183" y="-1057" width="1920" height="1057" />
     </state>
     <state x="607" y="-903" key="refactoring.ChangeSignatureDialog/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599661887230" />
+    <state x="514" y="-823" width="670" height="676" key="search.everywhere.popup" timestamp="1599768181617">
+      <screen x="-183" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="514" y="-823" width="670" height="676" key="search.everywhere.popup/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-183.-1057.1920.1057" timestamp="1599768181617" />
+    <state x="-1406" y="-823" width="670" height="676" key="search.everywhere.popup/0.23.1413.877/-2103.-1057.1920.1057/-183.-1057.1920.1057@-2103.-1057.1920.1057" timestamp="1599685311672" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/feed/FeedViewModel.kt</url>
+          <line>46</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/feed/FeedViewModel.kt</url>
+          <line>42</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/feed/FeedViewModel.kt</url>
+          <line>38</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/feed/FeedViewModel.kt</url>
+          <line>33</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/feed/FeedViewModel.kt</url>
+          <line>61</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/robelseyoum3/slynccodingchallenge/ui/feed/FeedViewModel.kt</url>
+          <line>47</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,11 +1,7 @@
 package com.robelseyoum3.slynccodingchallenge.data.model.login
 
+data class Country (
 
-import com.google.gson.annotations.SerializedName
-
-data class Country(
-    @SerializedName("country")
-    val country: String,
-    @SerializedName("guid")
-    val guid: String
+	val guid : String,
+	val country : String
 )

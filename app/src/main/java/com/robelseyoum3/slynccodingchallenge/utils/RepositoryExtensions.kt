@@ -19,10 +19,7 @@ suspend fun <T> safeApi(
     return withContext(dispatcher) {
         try {
 //            throws TimeoutCancellationException
-            withTimeout(Constants.NETWORK_TIMEOUT){
                 ApiResult.Success(apiCall.invoke()) //if it is success then it will pass the return type of the suspend function T (type of T) this -(apiCall: suspend () -> T? )
-            }
-
         } catch (throwable: Throwable){
 
             throwable.printStackTrace()

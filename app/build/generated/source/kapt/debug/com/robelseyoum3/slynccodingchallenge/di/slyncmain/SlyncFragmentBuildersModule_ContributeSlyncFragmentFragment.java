@@ -1,6 +1,6 @@
 package com.robelseyoum3.slynccodingchallenge.di.slyncmain;
 
-import com.robelseyoum3.slynccodingchallenge.ui.main.slyncnewsfeed.SlyncFragment;
+import com.robelseyoum3.slynccodingchallenge.ui.feed.FeedFragment;
 import dagger.Binds;
 import dagger.Module;
 import dagger.Subcomponent;
@@ -10,20 +10,20 @@ import dagger.multibindings.IntoMap;
 
 @Module(
   subcomponents =
-      SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.SlyncFragmentSubcomponent.class
+      SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment.FeedFragmentSubcomponent.class
 )
 public abstract class SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment {
   private SlyncFragmentBuildersModule_ContributeSlyncFragmentFragment() {}
 
   @Binds
   @IntoMap
-  @ClassKey(SlyncFragment.class)
+  @ClassKey(FeedFragment.class)
   abstract AndroidInjector.Factory<?> bindAndroidInjectorFactory(
-      SlyncFragmentSubcomponent.Factory builder);
+      FeedFragmentSubcomponent.Factory builder);
 
   @Subcomponent
-  public interface SlyncFragmentSubcomponent extends AndroidInjector<SlyncFragment> {
+  public interface FeedFragmentSubcomponent extends AndroidInjector<FeedFragment> {
     @Subcomponent.Factory
-    interface Factory extends AndroidInjector.Factory<SlyncFragment> {}
+    interface Factory extends AndroidInjector.Factory<FeedFragment> {}
   }
 }

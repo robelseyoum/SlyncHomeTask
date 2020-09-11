@@ -1,13 +1,9 @@
 package com.robelseyoum3.slynccodingchallenge.data.model.login
 
 
-import com.google.gson.annotations.SerializedName
+data class Institution (
 
-data class Institution(
-    @SerializedName("guid")
-    val guid: String,
-    @SerializedName("institution")
-    val institution: String,
-    @SerializedName("institutionType")
-    val institutionType: InstitutionType
+	val guid : String,
+	val institution : String,
+	val institutionType : InstitutionType
 )

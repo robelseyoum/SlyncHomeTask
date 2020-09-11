@@ -2,7 +2,6 @@ package com.robelseyoum3.slynccodingchallenge.di
 
 import android.app.Application
 import com.robelseyoum3.slynccodingchallenge.BaseApplication
-import com.robelseyoum3.slynccodingchallenge.session.SessionManager
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
@@ -20,8 +19,6 @@ import javax.inject.Singleton
     ]
 )
 interface AppComponent : AndroidInjector<BaseApplication> {
-
-    val sessionManager: SessionManager // must add here b/c injecting into abstract class
 
     @Component.Builder
     interface Builder {
