@@ -12,6 +12,7 @@ import com.bumptech.glide.RequestManager
 import com.bumptech.glide.request.RequestOptions
 import com.robelseyoum3.slynccodingchallenge.R
 import com.robelseyoum3.slynccodingchallenge.ui.feed.slyncnews.BaseFragment
+import com.robelseyoum3.slynccodingchallenge.utils.setDivider
 import kotlinx.android.synthetic.main.fragment_feed.*
 
 
@@ -35,9 +36,9 @@ class FeedFragment : BaseFragment() {
         attachLoginObserver()
         feedList.layoutManager = LinearLayoutManager(requireContext())
         adapter = FeedAdapter(requestManager as RequestManager)
+        feedList.setDivider(R.drawable.recycler_view_divider)
         feedList.adapter = adapter
         retryButton()
-
     }
 
     private fun retryButton() {

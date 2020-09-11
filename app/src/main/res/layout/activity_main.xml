@@ -20,13 +20,16 @@
             android:layout_height="wrap_content"
             app:layout_scrollFlags="scroll|enterAlways">
 
-            <ImageView
-                android:id="@+id/image_logo"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/ic_baseline_menu_book_24"
-                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:background="@drawable/slync" />
+
 
             <androidx.appcompat.widget.SearchView
                 android:id="@+id/search_view"
@@ -44,6 +47,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_margin="20dp"
+                android:backgroundTint="@color/white"
                 android:background="@drawable/ic_baseline_menu_book_24"
                 />
 
