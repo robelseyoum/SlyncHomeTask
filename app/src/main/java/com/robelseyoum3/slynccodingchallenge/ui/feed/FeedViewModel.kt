@@ -53,8 +53,6 @@ class FeedViewModel @Inject constructor(
     fun fetchPost() {
         launch {
 
-            Log.d("fetchPost", "$BEARER${loginLiveData.value!!.token.token}")
-
             val authorization  = "$BEARER${loginLiveData.value!!.token.token}"
             val fingerPrint = loginLiveData.value!!.token.fingerprint
 
